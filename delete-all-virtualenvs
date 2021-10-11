@@ -1,0 +1,15 @@
+#!/bin/sh
+
+printf "Delete ALL of your user's Python virtualenvs? (y/N) "
+
+read -r confirm
+
+case "$confirm" in
+[Yy]|[Yy][Ee][Ss])
+    printf '\nDeleting all of your Python virtual environments.\n'
+    rm -rv ~/.virtualenvs ~/.local/share/virtualenv ~/.local/share/virtualenvs
+    ;;
+*)
+    printf '\nCanceled. No virtualenvs deleted.\n'
+    ;;
+esac
