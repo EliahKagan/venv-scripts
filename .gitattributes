@@ -1,0 +1,4 @@
+# Shell scripts should always have Unix-style (LF) line endings
+/check text=auto eol=lf
+/pipenv text=auto eol=lf
+/delete-all-virtualenvs text=auto eol=lf
