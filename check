@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+find . -name .git -prune -o \
+    -type f -executable \
+    -printf 'Checking %P...\n' -exec shellcheck {} \; -printf '\n'
+
+printf 'Done.\n'
