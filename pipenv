@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/pipenv --python python3.10 "$@"
